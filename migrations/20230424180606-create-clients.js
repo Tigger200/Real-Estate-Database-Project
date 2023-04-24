@@ -12,12 +12,20 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      agent: {
-        type: Sequelize.STRING
+      agent_id: {
+        type: Sequelize.INTEGER,
+        references:{
+          model: "Agents", 
+          key:"id"
+        }
       },
-      property: {
-        type: Sequelize.STRING
-      },
+      // property: {
+      //   type: Sequelize.STRING,
+      //   references:{
+      //     model: "properties", 
+      //     key:"id",
+      //   }
+      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

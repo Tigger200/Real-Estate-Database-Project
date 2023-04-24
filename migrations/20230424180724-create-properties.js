@@ -13,10 +13,18 @@ module.exports = {
         type: Sequelize.STRING
       },
       agent_id: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
+        references:{
+          model: "Agents", 
+          key:"id",
+        }
       },
       client: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
+        references:{
+          model: "Clients", 
+          key:"id",
+        }
       },
       createdAt: {
         allowNull: false,
