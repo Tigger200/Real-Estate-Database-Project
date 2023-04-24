@@ -8,10 +8,11 @@ module.exports = {
     await queryInterface.bulkInsert('Properties',[{
       address: "101 Summit Ave, West Seneca, NY 14224",
       client: 'Bob', 
-      agent_id:2,
+      agent_id: 2,
       createdAt: new Date(),
-      UpdatedAt: new Date()
-    }])
+      updatedAt: new Date()
+    }], {}
+    ); 
   },
 
 

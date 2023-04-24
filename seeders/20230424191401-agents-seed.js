@@ -6,7 +6,7 @@ const { QueryInterface } = require('sequelize');
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Agents', [{
-      name: "Johnny Salesman",
+      name: "Agent Bill",
       createdAt: new Date(), 
       updatedAt: new Date() }], {}
       ); 
