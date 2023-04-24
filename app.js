@@ -11,6 +11,7 @@ const { Sequelize } = require("sequelize");
 var indexRouter = require('./routes/index');
 var agentsRouter = require('./routes/agents');
 var clientsRouter = require('./routes/clients');
+var propertiesRouter = require('./routes/properties')
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/agents', agentsRouter);
 app.use('/clients', clientsRouter);
+app.use('/properties', propertiesRouter);
 
 app.listen(port, () => {
     console.log(`Server running at port ${port}`);
