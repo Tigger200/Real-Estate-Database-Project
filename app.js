@@ -6,8 +6,11 @@ const { Sequelize } = require("sequelize");
 // const {*tables*} = require("models");
 
 
+
+
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var agentsRouter = require('./routes/agents');
+var clientsRouter = require('./routes/clients');
 
 var app = express();
 
@@ -20,7 +23,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/agents', agentsRouter);
+app.use('/clients', clientsRouter);
 
 app.listen(port, () => {
     console.log(`Server running at port ${port}`);
