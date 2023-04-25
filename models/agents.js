@@ -10,6 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+      models.agents.hasMany(models.clients,{foreignKey:'agent_id'})
+      models.agents.hasMany(models.properties,{foreignKey:'agent_id'})
     }
   }
   Agents.init({
