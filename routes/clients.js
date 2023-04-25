@@ -8,7 +8,21 @@ router.get('/', async function(req, res, next) {
     res.json(clients);
 })
 
+<<<<<<< HEAD
     
+=======
+router.post('/', async (req,res) => {
+    const {name, agent, property} = req.body;
+    const newClient = await Clients.create({
+        name,
+        agent,
+        property
+    });
+    res.json({
+        id: newClient.id
+    })
+})
+>>>>>>> 44b48fad51a7c98b1ecbd86037667c8f2465fb13
 
 module.exports = router;
 
