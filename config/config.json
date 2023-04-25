@@ -2,7 +2,7 @@
   "development": {
     "username": "corcoding",
     "password": null,
-    "database": "CENTURY22",
+    "database": "real-estate-db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

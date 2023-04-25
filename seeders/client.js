@@ -5,7 +5,6 @@ module.exports = {
         name: "Jeanne Doe",
         agent_id: 'Agent Bill',
         Property: '101 Karalyle, Atlanta, GA 30350'}], 
-        
         {}
         ); 
     },}
