@@ -8,5 +8,7 @@ router.get('/', async function(req, res, next) {
     res.json(clients);
 })
 
+    
+
 module.exports = router;
 
